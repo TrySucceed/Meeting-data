@@ -1,9 +1,6 @@
 #include "overall.h"
 
-class meeting
-{
-	float expectedDuration, actualDuration, percentageOver;
-	string part;
+
 
 void setExpectedDuration (float temp)
 {
@@ -30,5 +27,4 @@ void getPercentageOver (float temp)
 float setPercentageOver (void)
 {
 	percentageOver=temp;
-}
 }

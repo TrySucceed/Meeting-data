@@ -1,10 +1,6 @@
 #include "individuals.h"
 
-class person
-{
-	int speaks;
-	float totalSpeaking, percentageSpeaking, shortest, longest;
-	string name;
+
 
 int getSpeaks (void)
 {
@@ -53,6 +49,4 @@ string getName (void)
 void setName (string temp)
 {
 	name=temp;
-}
-
 }
