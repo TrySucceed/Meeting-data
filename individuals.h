@@ -4,6 +4,7 @@
 class person
 {
 	int speaks;
+		//number of times a person speaks
 	float totalSpeaking, percentageSpeaking, shortest, longest;
 	string name;
 int getSpeaks (void);
