@@ -7,7 +7,7 @@
 #include <string>
 
 
-#define MAX 80
+#define MAX 800
 
 using namespace std;
 
@@ -91,22 +91,33 @@ int main (int argc, char** argv) {
 	cout << length << endl;
 
 	int tempTotal[3] = {0,0,0};
+	cout << 1 << endl;
 	for (int i = length + 1; lines[0][i] != '\n'; ) {
+		cout << 2 << endl;
 		tempTotal[0] += (10 * (lines[0][i] - '0'));
+		cout << 3 << endl;
 		++i;
+		cout << 4 << endl;
 		tempTotal[0] += (lines[0][i] - '0');
+		cout << 5 << endl;
 		++i; ++i;
+		cout << 6 << endl;
 		tempTotal[1] += (10 * (lines[0][i] - '0'));
 		++i;
+		cout << 7 << endl;
 		tempTotal[1] += (lines[0][i] - '0');
+		cout << 8 << endl;
 		++i; ++i;
+		cout << 9 << endl;
 		tempTotal[2] += (10 * (lines[0][i] - '0'));
+		cout << 10 << endl;
 		++i;
+		cout << 11 << endl;
 		tempTotal[2] += (lines[0][i] - '0');
-		++i;
-		if (lines[0][i] != '\n')
-			++i;
-		else continue;
+		cout << 12 << endl;
+		cout << 13 << endl;
+		++i; ++i;
+		cout << 14 << endl;
 	}
 	std::cout << tempTotal[0] << "." << tempTotal[1] << "." << tempTotal[2] << endl;
 	fout.close();
