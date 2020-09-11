@@ -1,0 +1,5 @@
+minutes 1.50.00
+icebreaker 8.20.35
+old_buisness 40.35.90
+new_buisness 20.52.11
+reports 15.20.35

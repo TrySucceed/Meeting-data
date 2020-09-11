@@ -1,6 +1,8 @@
 # Meeting-data
 This will take the data from a meeting supplied by two files and process it in summarized terms.
 
+*=needs to be added
+
 The data it will return is in the following catories:
 
 individual
@@ -9,6 +11,8 @@ individual
 	longest speaking duration
 	shortest speaking duration
 	times spoken
+	*mean duration of speach
+	*average duration of speech
 group
 	expected duration
 	actual duration
