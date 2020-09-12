@@ -20,6 +20,7 @@ group
 Historical
 	average over for common catagories
 	mean over for common catagories
+	mean of portion (stored in group)
 
 problems:
 converting times to a useable format
