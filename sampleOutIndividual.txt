@@ -4,7 +4,6 @@ This person spoke #% of the speaking time
 Longst single speaking duration: # minuts, # seconds, # miliseconds
 Shortest single speaking duration: # minuts, # seconds, # miliseconds
 This person spoke # times.
-Mean duration of speeaches:# minuts, # seconds, # miliseconds
 Average duration of speeches: # minuts, # seconds, # miliseconds
 
 Name 2

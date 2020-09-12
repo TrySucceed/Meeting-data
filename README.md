@@ -11,7 +11,6 @@ individual
 	longest speaking duration
 	shortest speaking duration
 	times spoken
-	*mean duration of speach
 	*average duration of speech
 group
 	expected duration
@@ -20,7 +19,7 @@ group
 Historical
 	average over for common catagories
 	mean over for common catagories
-	mean of portion (stored in group)
+	mean of portion historically (stored in group)
 
 problems:
 converting times to a useable format
