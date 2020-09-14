@@ -124,6 +124,13 @@ int main (int argc, char** argv) {
 	return 0;
 }
 
+float toMinutes (int tempTotal[])
+{
+	float minutes=tempTotal[0];
+	minutes=+(tempTotal[1]/60);
+	minutes=+(tempTotal[2]/600);
+	return minutes;
+}
 int Person::getTotalTime()
 {
 	return totalTime;
