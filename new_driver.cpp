@@ -24,7 +24,9 @@ private:
 	int lengthOfName;
 public:
 	int getTotalTime();
-	int getEveryoneTime();
+	static int getEveryoneTime() {
+		return everyoneTime;
+	}
 	int getPercentageTime();
 	int getLongestTime();
 	int getShortestTime();
@@ -33,10 +35,12 @@ public:
 	int getAverageTime();
 	int getLengthOfName();
 	void setTotalTime(int temp);
-	void s_setEveryoneTime(int temp);
+	static void setEveryoneTime(int temp) {
+		everyoneTime = temp;
+	}
 	void setPercentageTime(int temp);
 	void setLongestTime(int temp);
-	void setShortestTIme(int temp);
+	void setShortestTime(int temp);
 	void setHowManyTimes(int temp);
 	void setMedianTime(int temp);
 	void setAverageTime(int temp);
@@ -122,24 +126,21 @@ int main (int argc, char** argv) {
 		cout << 14 << endl;
 	}
 	std::cout << tempTotal[0] << "." << tempTotal[1] << "." << tempTotal[2] << endl;
+	std::cout << "Total minutes: " << toMinutes(tempTotal) << std::endl;
 	fout.close();
 	return 0;
 }
 
 float toMinutes (int tempTotal[])
 {
-	float minutes=tempTotal[0];
-	minutes=+(tempTotal[1]/60);
-	minutes=+(tempTotal[2]/60000);
+	float minutes = tempTotal[0];
+	minutes += ( float(tempTotal[1]) / 60);
+	minutes += ( float(tempTotal[2]) / 6000);
 	return minutes;
 }
 int Person::getTotalTime()
 {
 	return totalTime;
-}
-int Person::getEveryoneTime()
-{
-	return everyoneTime;
 }
 int Person::getPercentageTime()
 {
@@ -147,7 +148,7 @@ int Person::getPercentageTime()
 }
 int Person::getLongestTime()
 {
-	return longestTime
+	return longestTime;
 }
 int Person::getShortestTime()
 {
@@ -173,11 +174,8 @@ void Person::setTotalTime(int temp)
 {
 	totalTime=temp;
 }
-void Person::s_setEveryoneTime(int temp)
-{
-	everyoneTime=temp;
-}
-void Person::setPercentageTime(int tmep)
+
+void Person::setPercentageTime(int temp)
 {
 	percentageTime=temp;
 }
@@ -197,7 +195,7 @@ void Person::setMedianTime(int temp)
 {
 	medianTime=temp;
 }
-void Person::setAverageTime(int tmep)
+void Person::setAverageTime(int temp)
 {
 	averageTime=temp;
 }

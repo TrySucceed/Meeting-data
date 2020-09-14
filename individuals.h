@@ -1,6 +1,6 @@
 #include <iostream>
 #include <fstream>
-#include <strings>
+#include <string>
 class person
 {
 	int speaks;
