@@ -43,6 +43,8 @@ public:
 	void setLengthOfName(int temp);
 };
 
+float toMinutes (int tempTotal[]);
+
 int main (int argc, char** argv) {
 	string lines[MAX];
 	int size = 0;
