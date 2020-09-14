@@ -130,7 +130,7 @@ float toMinutes (int tempTotal[])
 {
 	float minutes=tempTotal[0];
 	minutes=+(tempTotal[1]/60);
-	minutes=+(tempTotal[2]/600);
+	minutes=+(tempTotal[2]/60000);
 	return minutes;
 }
 int Person::getTotalTime()
