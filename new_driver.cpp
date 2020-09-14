@@ -45,6 +45,18 @@ public:
 
 float toMinutes (int tempTotal[]);
 
+/*
+float expectedValue (float historicalTimes[]);
+	//this one is for the expected duration under group
+float longestSpeak (float speakignTimes[]);
+float shortestSpeak (float speakignTimes[]);
+float averageSpeechLength (flaot speakingTimes[]);
+//I will assume you know or can ealsily get the nubmer of times spoken in main
+float durationPercentageOver (float expectedDuration, float actualDuration);
+	//both in seconds
+//add any functions you think of for me to do.
+*/
+
 int main (int argc, char** argv) {
 	string lines[MAX];
 	int size = 0;
