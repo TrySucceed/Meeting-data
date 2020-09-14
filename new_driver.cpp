@@ -48,16 +48,18 @@ public:
 };
 
 float toMinutes (int tempTotal[]);
-
+float longestSpeak (float speakignTimes[]);
+float averageSpeechLength (float speakingTimes[]);
+float shortestSpeak (float speakignTimes[]);
+float durationPercentageOver (float expectedDuration, float actualDuration);
+	//both in seconds
 /*
 float expectedValue (float historicalTimes[]);
 	//this one is for the expected duration under group
-float longestSpeak (float speakignTimes[]);
-float shortestSpeak (float speakignTimes[]);
-float averageSpeechLength (flaot speakingTimes[]);
+
+
 //I will assume you know or can ealsily get the nubmer of times spoken in main
-float durationPercentageOver (float expectedDuration, float actualDuration);
-	//both in seconds
+
 //add any functions you think of for me to do.
 */
 
@@ -142,7 +144,7 @@ int main (int argc, char** argv) {
 	fout.close();
 	return 0;
 }
-
+	//inputs diffrent portions of the scnned time data and returns a flat of the time in minutes
 float toMinutes (int tempTotal[])
 {
 	float minutes = tempTotal[0];
@@ -150,6 +152,50 @@ float toMinutes (int tempTotal[])
 	minutes += ( float(tempTotal[2]) / 6000);
 	return minutes;
 }
+	//inputting a float array of time in minutes, this will return the verage of the dataset in a float.
+float averageSpeechLength (float speakingTimes[])
+{
+	int i;
+	float average=0;
+	for(i=0; speakingTimes[i]!='\0'; i++)
+	{
+		average=+speakingTimes[i];
+	}
+	average=average/i;
+	return average;
+}
+	//inputting a float array of time in minutes, this will return the largest value in that array in the form of a float.
+float longestSpeak (float speakignTimes[])
+{
+	float longest=0;
+	for(int i=0; speakingTimes[i]!='\0'; i++)
+	{
+		if (speakingTimes[i]>longest)
+		{
+			longest=speakingTimes[i];
+		}
+	}
+	return longest;
+}
+	//inputting a float array of the time in minues, this will return the smallest value in the array in the form of a float.
+float shortestSpeak (float speakignTimes[])
+{
+	float shortest=999999999999999;
+	for(int i=0; speakingTimes[i]!='\0'; i++)
+	{
+		if(speakingTimes[i]<shortest)
+		{
+			shortest=speakingTimes;
+		}
+	}
+	return shortest;
+}
+	//both in seconds
+float durationPercentageOver (float expectedDuration, float actualDuration);
+{
+	return (expecedDuration/actualDuration)*100
+}
+
 int Person::getTotalTime()
 {
 	return totalTime;
