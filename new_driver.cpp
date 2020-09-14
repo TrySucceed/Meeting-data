@@ -53,11 +53,9 @@ float averageSpeechLength (float speakingTimes[]);
 float shortestSpeak (float speakignTimes[]);
 float durationPercentageOver (float expectedDuration, float actualDuration);
 	//both in seconds
-/*
 float expectedValue (float historicalTimes[]);
 	//this one is for the expected duration under group
-
-
+/*
 //I will assume you know or can ealsily get the nubmer of times spoken in main
 
 //add any functions you think of for me to do.
@@ -190,8 +188,23 @@ float shortestSpeak (float speakignTimes[])
 	}
 	return shortest;
 }
-	//both in seconds
+	//inputting a float of historical times from the historicalTimes array, this will return a float of the prediced lenth
+	//this should be called after updating the historical text file
+float expectedValue (float historicalTimes[])
+{
+	int i;
+	float total=0, expectedValue;
+	for(i=0; historicalTimes[i]!='\0'; i++)
+	{
+		total=historicalTimes[i]+total;
+	}
+	expectedValue=total/i;
+	return expectedValue;
+}
+	//both inputs are in seconds
 float durationPercentageOver (float expectedDuration, float actualDuration);
+
+
 {
 	return (expecedDuration/actualDuration)*100
 }
