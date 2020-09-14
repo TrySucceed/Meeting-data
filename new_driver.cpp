@@ -92,7 +92,7 @@ int main (int argc, char** argv) {
 
 	int tempTotal[3] = {0,0,0};
 	cout << 1 << endl;
-	for (int i = length + 1; lines[0][i] != '\n'; ) {
+	for (int i = length + 1; lines[0][i] != '\0'; ) {
 		cout << 2 << endl;
 		tempTotal[0] += (10 * (lines[0][i] - '0'));
 		cout << 3 << endl;
