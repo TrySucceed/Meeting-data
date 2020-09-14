@@ -32,15 +32,15 @@ public:
 	int getMedianTime();
 	int getAverageTime();
 	int getLengthOfName();
-	void setTotalTime(int);
-	void s_setEveryoneTime(int);
-	void setPercentageTime(int);
-	void setLongestTime(int);
-	void setShortestTIme(int);
-	void setHowManyTimes(int);
-	void setMedianTime(int);
-	void setAverageTime(int);
-	void setLengthOfName(int);
+	void setTotalTime(int temp);
+	void s_setEveryoneTime(int temp);
+	void setPercentageTime(int temp);
+	void setLongestTime(int temp);
+	void setShortestTIme(int temp);
+	void setHowManyTimes(int temp);
+	void setMedianTime(int temp);
+	void setAverageTime(int temp);
+	void setLengthOfName(int temp);
 };
 
 int main (int argc, char** argv) {
@@ -124,21 +124,75 @@ int main (int argc, char** argv) {
 	return 0;
 }
 
-int Person::getTotalTime(){}
-int Person::getEveryoneTime(){}
-int Person::getPercentageTime(){}
-int Person::getLongestTime(){}
-int Person::getShortestTime(){}
-int Person::getHowManyTimes(){}
-int Person::getMedianTime(){}
-int Person::getAverageTime(){}
-int Person::getLengthOfName(){}
-void Person::setTotalTime(int){}
-void Person::s_setEveryoneTime(int){}
-void Person::setPercentageTime(int){}
-void Person::setLongestTime(int){}
-void Person::setShortestTIme(int){}
-void Person::setHowManyTimes(int){}
-void Person::setMedianTime(int){}
-void Person::setAverageTime(int){}
-void Person::setLengthOfName(int){}
+int Person::getTotalTime()
+{
+	return totalTime;
+}
+int Person::getEveryoneTime()
+{
+	return everyoneTime;
+}
+int Person::getPercentageTime()
+{
+	return percentageTime;
+}
+int Person::getLongestTime()
+{
+	return longestTime
+}
+int Person::getShortestTime()
+{
+	return shortestTime;
+}
+int Person::getHowManyTimes()
+{
+	return howManyTimes;
+}
+int Person::getMedianTime()
+{
+	return medianTime;
+}
+int Person::getAverageTime()
+{
+	return averageTime;
+}
+int Person::getLengthOfName()
+{
+	return lengthOfName;
+}
+void Person::setTotalTime(int temp)
+{
+	totalTime=temp;
+}
+void Person::s_setEveryoneTime(int temp)
+{
+	everyoneTime=temp;
+}
+void Person::setPercentageTime(int tmep)
+{
+	percentageTime=temp;
+}
+void Person::setLongestTime(int temp)
+{
+	longestTime=temp;
+}
+void Person::setShortestTime(int temp)
+{
+	shortestTime=temp;
+}
+void Person::setHowManyTimes(int temp)
+{
+	howManyTimes=temp;
+}
+void Person::setMedianTime(int temp)
+{
+	medianTime=temp;
+}
+void Person::setAverageTime(int tmep)
+{
+	averageTime=temp;
+}
+void Person::setLengthOfName(int temp)
+{
+	lengthOfName=temp;
+}
