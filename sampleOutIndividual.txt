@@ -1,9 +1,9 @@
 Name
-Total speakign time: # hours, # minuts, # seconds, # miliseconds
+Total speaking time: # minutes, # seconds
 This person spoke #% of the speaking time
-Longst single speaking duration: # minuts, # seconds, # miliseconds
-Shortest single speaking duration: # minuts, # seconds, # miliseconds
+Longst single speaking duration: # minuts, # seconds
+Shortest single speaking duration: # minuts, # seconds
 This person spoke # times.
-Average duration of speeches: # minuts, # seconds, # miliseconds
+Average duration of speeches: # minuts, # seconds
 
 Name 2

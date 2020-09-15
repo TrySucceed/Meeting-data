@@ -1,6 +1,6 @@
 *This Part* was forcasted to take # minutes.
 It took # minutes, # seconds, # of miliseconds.
 That is #% over the expected time.
-The expected duration based on historical data (mean) is # minutes, # seconds, # of miliseconds.
+The expected duration based on historical data (mean) is # minutes, # seconds.
 
 *This Other Part*

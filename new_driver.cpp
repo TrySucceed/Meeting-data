@@ -45,6 +45,27 @@ public:
 	void setMedianTime(int temp);
 	void setAverageTime(int temp);
 	void setLengthOfName(int temp);
+	void displayIndividual(string filename);
+};
+
+class Overall {
+private:
+	float expectedMinutes;
+	float actualMinutes;
+	string name;
+	float predictedMinutes;
+
+public:	
+	float getExpectedMinutes (void);
+	float getActualMinuts (void);
+	float getPredictedMinutes (void);
+	string getName (void);
+
+	void setExpectedMinutes (float temp);
+	void setActualMinutes (float temp);
+	void setPredictedMinutes (float temp);
+	void setName (string temp);
+	void displayOverall(string filename);
 };
 
 float toMinutes (int tempTotal[]);
@@ -209,6 +230,7 @@ float durationPercentageOver (float expectedDuration, float actualDuration);
 	return (expecedDuration/actualDuration)*100
 }
 
+//getters and setters for individuals
 int Person::getTotalTime()
 {
 	return totalTime;
@@ -274,3 +296,88 @@ void Person::setLengthOfName(int temp)
 {
 	lengthOfName=temp;
 }
+ 	void displayIndividual(string filename)
+{
+	int Minutes;
+	float Seconds;
+
+	ofstream fout;
+	ifstream fin;
+	fin.open("individuals.txt");
+	fout.open ("individuals.txt",ios::app);
+
+	minues=totalTime;
+	seconds=(totalTime-minutes)*60;
+	fout << name << endl;
+	fout << "Total speaking time: " << minutes << "minutes, " << seconds << " seconds." << endl;
+	fout << name << "spoke " << percentageTime << "percent of the speaking time." << endl;
+	minutes=longest;
+	seconds=(longest-minutes)*60;
+	fout << "Longest single speaking duration: " << minutes << " minutes, " << seconds << " seconds." << endl;
+	minutes=shortest;
+	seconds=(shortest-minutes)*60;
+	fout << "Shortset single speaking duration: " << minutes << " minutes, " << seconds << " seconds."
+	fout << name << " spoke " << howManyTimes << "times." << endl;
+	minutes=averageTime;
+	seconds=(averageTime-minutes)*60;
+	fout << "Average duration of speeches: " << minutes << " minutes, " << seconds << " seconds." << endl << endl;
+	
+	fin.close();
+	fout.close();
+}
+
+//getters and setters for overall
+float getExpectedMinutes (void)
+{
+	return expectedMinutes;
+}
+float getActualMinuts (void)
+{
+	return actualMinutes;
+}
+float getPredictedMinutes (void)
+{
+	return predictedMinutes;
+}
+string getName (void)
+{
+	return name;
+}
+void setExpectedMinutes (float temp)
+{
+	expectedMinutes=temp;
+}
+void setActualMinutes (float temp)
+{
+	actualMinutes=temp;
+}
+void setPredictedMinutes (float temp)
+{
+	predictedMinutes=temp;
+}
+void setName (string temp)
+{
+	name=temp;
+}
+void displayOverall(string filename)
+{
+	int Minutes;
+	float Seconds;
+
+	ofstream fout;
+	ifstream fin;
+	fin.open("overall.txt");
+	fout.open ("overall.txt",ios::app);
+
+	minues=expectedMinutes;
+	seconds=(expectedMinutes-minutes)*60;
+	fout << name << "was froecasted to take " << minutes << " minutes, " << seconds << " seconds." << endl;
+	minues=actualMinutes;
+	seconds=(actualMinutes-minutes)*60;
+	fout << "It took " << minutes << "minutes, " << seconds << "seconds." << endl;
+	fout << "That is " << minutes << "percent over the expected time." << endl << endl;
+	
+	fin.close();
+	fout.close();
+}
+
