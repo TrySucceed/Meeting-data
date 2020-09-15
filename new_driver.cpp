@@ -45,7 +45,7 @@ public:
 	void setMedianTime(int temp);
 	void setAverageTime(int temp);
 	void setLengthOfName(int temp);
-	void displayIndividual(string filename);
+	void displayIndividual(void);
 };
 
 class Overall {
@@ -65,7 +65,7 @@ public:
 	void setActualMinutes (float temp);
 	void setPredictedMinutes (float temp);
 	void setName (string temp);
-	void displayOverall(string filename);
+	void displayOverall(void);
 };
 
 float toMinutes (int tempTotal[]);
@@ -296,7 +296,7 @@ void Person::setLengthOfName(int temp)
 {
 	lengthOfName=temp;
 }
- 	void displayIndividual(string filename)
+ 	void displayIndividual(void)
 {
 	int Minutes;
 	float Seconds;
@@ -359,7 +359,7 @@ void setName (string temp)
 {
 	name=temp;
 }
-void displayOverall(string filename)
+void displayOverall(void)
 {
 	int Minutes;
 	float Seconds;
