@@ -21,5 +21,6 @@ Historical
 	mean of portion historically (stored in group)
 
 problems:
-switihing displaying to be within the class, not in driver
-making makefile
+input all datat wthin program
+menu for overall vs individual
+
